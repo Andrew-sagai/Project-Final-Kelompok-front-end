@@ -76,6 +76,15 @@ export default function Events() {
     }
 
     return (
+<<<<<<< HEAD
+        <div className="space-y-8 animate-fade-in">
+            <div className="flex items-center justify-between">
+                <div>
+                    <h1 className="text-4xl font-bold text-white mb-2 tracking-tight">
+                        Events & Activities
+                    </h1>
+                    <p className="text-gray-400 text-lg">
+=======
         <div className="space-y-6">
             <div className="flex items-center justify-between">
                 <div>
@@ -83,6 +92,7 @@ export default function Events() {
                         Events & Activities
                     </h1>
                     <p className="text-gray-600 dark:text-gray-400">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                         Manage your schedule and important dates
                     </p>
                 </div>

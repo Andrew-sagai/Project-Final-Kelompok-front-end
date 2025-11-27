@@ -30,15 +30,26 @@ export default function Modal({ isOpen, onClose, title, children, size = 'md' })
             />
 
             {/* Modal */}
+<<<<<<< HEAD
+            <div className={`relative glass-panel rounded-2xl shadow-2xl ${sizes[size]} w-full max-h-[90vh] overflow-y-auto animate-slideUp`}>
+                {/* Header */}
+                <div className="flex items-center justify-between p-6 border-b border-white/10">
+                    <h2 className="text-2xl font-bold text-white">
+=======
             <div className={`relative bg-white dark:bg-gray-800 rounded-2xl shadow-2xl ${sizes[size]} w-full max-h-[90vh] overflow-y-auto animate-slideUp`}>
                 {/* Header */}
                 <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
                     <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                         {title}
                     </h2>
                     <button
                         onClick={onClose}
+<<<<<<< HEAD
+                        className="text-gray-400 hover:text-white transition-colors"
+=======
                         className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                     >
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

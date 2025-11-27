@@ -47,7 +47,11 @@ export default function EventCalendar({ events, onEdit, onDelete, onAdd }) {
         <div className="space-y-6">
             {/* Calendar Header */}
             <div className="flex items-center justify-between">
+<<<<<<< HEAD
+                <h2 className="text-2xl font-bold text-white">
+=======
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                     {monthNames[currentDate.getMonth()]} {currentDate.getFullYear()}
                 </h2>
                 <div className="flex items-center gap-2">
@@ -70,7 +74,11 @@ export default function EventCalendar({ events, onEdit, onDelete, onAdd }) {
             <Card className="p-6">
                 <div className="grid grid-cols-7 gap-4 mb-4">
                     {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
+<<<<<<< HEAD
+                        <div key={day} className="text-center font-bold text-gray-400">
+=======
                         <div key={day} className="text-center font-bold text-gray-500 dark:text-gray-400">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                             {day}
                         </div>
                     ))}
@@ -79,7 +87,11 @@ export default function EventCalendar({ events, onEdit, onDelete, onAdd }) {
                 <div className="grid grid-cols-7 gap-2">
                     {/* Empty cells for previous month */}
                     {Array.from({ length: firstDay }).map((_, i) => (
+<<<<<<< HEAD
+                        <div key={`empty-${i}`} className="h-32 bg-white/5 rounded-lg opacity-50" />
+=======
                         <div key={`empty-${i}`} className="h-32 bg-gray-50 dark:bg-gray-800/50 rounded-lg opacity-50" />
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                     ))}
 
                     {/* Days */}
@@ -93,17 +105,30 @@ export default function EventCalendar({ events, onEdit, onDelete, onAdd }) {
                             <div
                                 key={day}
                                 className={`h-32 p-2 border rounded-lg overflow-y-auto ${isToday
+<<<<<<< HEAD
+                                    ? 'border-aurora-blue/50 bg-aurora-blue/10'
+                                    : 'border-white/10 bg-white/5'
+                                    }`}
+                            >
+                                <div className="flex justify-between items-start mb-1">
+                                    <span className={`text-sm font-bold ${isToday ? 'text-aurora-blue' : 'text-gray-300'
+=======
                                         ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
                                         : 'border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800'
                                     }`}
                             >
                                 <div className="flex justify-between items-start mb-1">
                                     <span className={`text-sm font-bold ${isToday ? 'text-blue-600 dark:text-blue-400' : 'text-gray-700 dark:text-gray-300'
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                                         }`}>
                                         {day}
                                     </span>
                                     {dayEvents.length > 0 && (
+<<<<<<< HEAD
+                                        <span className="text-xs text-gray-400">{dayEvents.length} events</span>
+=======
                                         <span className="text-xs text-gray-500">{dayEvents.length} events</span>
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                                     )}
                                 </div>
 
@@ -112,7 +137,11 @@ export default function EventCalendar({ events, onEdit, onDelete, onAdd }) {
                                         <div
                                             key={event.id}
                                             onClick={() => onEdit(event)}
+<<<<<<< HEAD
+                                            className="text-xs p-1 rounded cursor-pointer hover:opacity-80 truncate bg-white/10 shadow-sm border border-white/10"
+=======
                                             className="text-xs p-1 rounded cursor-pointer hover:opacity-80 truncate bg-white dark:bg-gray-700 shadow-sm border border-gray-100 dark:border-gray-600"
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                                         >
                                             <div className="flex items-center gap-1">
                                                 <div className={`w-1.5 h-1.5 rounded-full bg-${getTypeColor(event.type)}-500`} />
@@ -129,7 +158,11 @@ export default function EventCalendar({ events, onEdit, onDelete, onAdd }) {
 
             {/* Upcoming Events List */}
             <Card className="p-6">
+<<<<<<< HEAD
+                <h3 className="text-lg font-bold text-white mb-4">
+=======
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                     Upcoming Events
                 </h3>
                 <div className="space-y-3">
@@ -138,12 +171,21 @@ export default function EventCalendar({ events, onEdit, onDelete, onAdd }) {
                         .sort((a, b) => new Date(a.date) - new Date(b.date))
                         .slice(0, 5)
                         .map(event => (
+<<<<<<< HEAD
+                            <div key={event.id} className="flex items-center justify-between p-3 bg-white/5 rounded-lg">
+                                <div className="flex items-center gap-3">
+                                    <div className={`w-2 h-12 rounded-full bg-${getTypeColor(event.type)}-500`} />
+                                    <div>
+                                        <h4 className="font-medium text-white">{event.title}</h4>
+                                        <p className="text-sm text-gray-400">
+=======
                             <div key={event.id} className="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
                                 <div className="flex items-center gap-3">
                                     <div className={`w-2 h-12 rounded-full bg-${getTypeColor(event.type)}-500`} />
                                     <div>
                                         <h4 className="font-medium text-gray-900 dark:text-white">{event.title}</h4>
                                         <p className="text-sm text-gray-500 dark:text-gray-400">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                                             {new Date(event.date).toLocaleDateString()} at {event.time || 'All Day'}
                                         </p>
                                     </div>
@@ -162,7 +204,11 @@ export default function EventCalendar({ events, onEdit, onDelete, onAdd }) {
                             </div>
                         ))}
                     {events.filter(e => new Date(e.date) >= new Date()).length === 0 && (
+<<<<<<< HEAD
+                        <p className="text-gray-400 text-center py-4">
+=======
                         <p className="text-gray-500 dark:text-gray-400 text-center py-4">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                             No upcoming events scheduled.
                         </p>
                     )}

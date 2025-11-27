@@ -60,7 +60,11 @@ export default function HabitForm({ plan, onSubmit, onCancel }) {
 
             <div>
                 <div className="flex items-center justify-between mb-2">
+<<<<<<< HEAD
+                    <label className="block text-sm font-medium text-gray-300">
+=======
                     <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                         Habits
                     </label>
                     <Button type="button" onClick={handleAddHabit} size="sm" variant="outline">
@@ -73,14 +77,22 @@ export default function HabitForm({ plan, onSubmit, onCancel }) {
 
                 <div className="space-y-3">
                     {habits.map((habit, index) => (
+<<<<<<< HEAD
+                        <div key={index} className="flex items-center gap-2 p-3 bg-white/5 rounded-lg">
+=======
                         <div key={index} className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                             <div className="flex-1">
                                 <input
                                     type="text"
                                     value={habit.habitTitle}
                                     onChange={(e) => handleHabitChange(index, 'habitTitle', e.target.value)}
                                     placeholder="Habit name"
+<<<<<<< HEAD
+                                    className="w-full px-3 py-2 border border-white/10 rounded-lg bg-white/5 text-white placeholder-gray-500 focus:ring-2 focus:ring-aurora-cyan focus:border-transparent transition-colors"
+=======
                                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                                     required
                                 />
                             </div>
@@ -89,7 +101,11 @@ export default function HabitForm({ plan, onSubmit, onCancel }) {
                                     type="time"
                                     value={habit.time}
                                     onChange={(e) => handleHabitChange(index, 'time', e.target.value)}
+<<<<<<< HEAD
+                                    className="w-full px-3 py-2 border border-white/10 rounded-lg bg-white/5 text-white focus:ring-2 focus:ring-aurora-cyan focus:border-transparent transition-colors"
+=======
                                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                                     required
                                 />
                             </div>
@@ -109,8 +125,13 @@ export default function HabitForm({ plan, onSubmit, onCancel }) {
                 </div>
             </div>
 
+<<<<<<< HEAD
+            <div className="bg-blue-500/10 border border-blue-500/20 rounded-lg p-3">
+                <p className="text-sm text-blue-300">
+=======
             <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
                 <p className="text-sm text-blue-800 dark:text-blue-300">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                     💡 <strong>Tip:</strong> Add habits you want to do daily and set a specific time for each one.
                 </p>
             </div>

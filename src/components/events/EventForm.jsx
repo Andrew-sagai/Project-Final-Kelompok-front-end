@@ -67,14 +67,22 @@ export default function EventForm({ event, onSubmit, onCancel }) {
             </div>
 
             <div>
+<<<<<<< HEAD
+                <label className="block text-sm font-medium text-gray-300 mb-1">
+=======
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                     Type
                 </label>
                 <select
                     name="type"
                     value={formData.type}
                     onChange={handleChange}
+<<<<<<< HEAD
+                    className="w-full px-3 py-2 border border-white/10 rounded-lg bg-white/5 text-white focus:ring-2 focus:ring-aurora-cyan focus:border-transparent"
+=======
                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                 >
                     <option value="Activity">Activity</option>
                     <option value="Meeting">Meeting</option>

@@ -13,10 +13,10 @@ export default function HabitPlanCard({ plan, onEdit, onToggle, onReset, onDelet
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
                 <div>
-                    <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
+                    <h2 className="text-2xl font-bold text-white mb-1">
                         {plan.habitPlanName}
                     </h2>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                    <p className="text-sm text-gray-400">
                         {completedCount}/{totalCount} habits completed today ({completionRate}%)
                     </p>
                 </div>
@@ -42,14 +42,14 @@ export default function HabitPlanCard({ plan, onEdit, onToggle, onReset, onDelet
                     plan.habits.map((habit, index) => (
                         <div
                             key={index}
-                            className="flex items-center gap-4 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                            className="flex items-center gap-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors"
                         >
                             {/* Checkbox */}
                             <button
                                 onClick={() => onToggle(plan.id, index)}
                                 className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all ${habit.isDoneToday
-                                        ? 'bg-green-500 hover:bg-green-600'
-                                        : 'bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
+                                    ? 'bg-green-500 hover:bg-green-600'
+                                    : 'bg-white/10 hover:bg-white/20'
                                     }`}
                             >
                                 {habit.isDoneToday && (
@@ -61,7 +61,7 @@ export default function HabitPlanCard({ plan, onEdit, onToggle, onReset, onDelet
 
                             {/* Habit Info */}
                             <div className="flex-1">
-                                <p className={`font-medium ${habit.isDoneToday ? 'text-gray-500 dark:text-gray-400 line-through' : 'text-gray-900 dark:text-white'}`}>
+                                <p className={`font-medium ${habit.isDoneToday ? 'text-gray-500 line-through' : 'text-white'}`}>
                                     {habit.habitTitle}
                                 </p>
                             </div>
@@ -76,7 +76,7 @@ export default function HabitPlanCard({ plan, onEdit, onToggle, onReset, onDelet
                         </div>
                     ))
                 ) : (
-                    <p className="text-center text-gray-500 dark:text-gray-400 py-8">
+                    <p className="text-center text-gray-400 py-8">
                         No habits in your plan. Click "Edit Plan" to add habits.
                     </p>
                 )}
@@ -84,7 +84,7 @@ export default function HabitPlanCard({ plan, onEdit, onToggle, onReset, onDelet
 
             {/* Reset Button */}
             {completedCount > 0 && (
-                <div className="border-t border-gray-200 dark:border-gray-700 pt-4">
+                <div className="border-t border-white/10 pt-4">
                     <Button
                         onClick={() => onReset(plan.id)}
                         variant="outline"

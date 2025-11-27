@@ -54,7 +54,11 @@ export default function GoalForm({ goal, onSubmit, onCancel }) {
             />
 
             <div>
+<<<<<<< HEAD
+                <label className="block text-sm font-medium text-gray-300 mb-1">
+=======
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                     Description
                 </label>
                 <textarea
@@ -63,7 +67,11 @@ export default function GoalForm({ goal, onSubmit, onCancel }) {
                     onChange={handleChange}
                     placeholder="Describe your goal..."
                     rows={3}
+<<<<<<< HEAD
+                    className="w-full px-3 py-2 border border-white/10 rounded-lg bg-white/5 text-white placeholder-gray-500 focus:ring-2 focus:ring-aurora-cyan focus:border-transparent transition-colors"
+=======
                     className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                 />
             </div>
 
