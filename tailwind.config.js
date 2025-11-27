@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+<<<<<<< HEAD
     extend: {
       colors: {
         aurora: {
@@ -45,6 +46,9 @@ export default {
         }
       }
     },
+=======
+    extend: {},
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
   },
   plugins: [],
 }

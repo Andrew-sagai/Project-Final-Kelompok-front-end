@@ -41,36 +41,65 @@ export default function Login() {
     };
 
     return (
+<<<<<<< HEAD
         <div className="min-h-screen flex items-center justify-center p-4">
             <div className="w-full max-w-md animate-fade-in">
                 {/* Logo and Title */}
                 <div className="text-center mb-8">
                     <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-aurora-cyan to-aurora-purple rounded-2xl shadow-lg shadow-aurora-cyan/20 mb-6 animate-float">
+=======
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 flex items-center justify-center p-4">
+            <div className="w-full max-w-md">
+                {/* Logo and Title */}
+                <div className="text-center mb-8">
+                    <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl shadow-lg mb-4">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                         <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                         </svg>
                     </div>
+<<<<<<< HEAD
                     <h1 className="text-4xl font-bold text-white mb-2 tracking-tight">
                         Life Planner
                     </h1>
                     <p className="text-gray-400">
+=======
+                    <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+                        Life Planner
+                    </h1>
+                    <p className="text-gray-600 dark:text-gray-400">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                         Sign in to organize your life
                     </p>
                 </div>
 
                 {/* Login Form */}
+<<<<<<< HEAD
                 <div className="glass-panel p-8">
                     <h2 className="text-2xl font-bold text-white mb-6 text-center">
+=======
+                <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-2xl shadow-xl border border-white/20 dark:border-gray-700/50 p-8">
+                    <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                         Welcome Back
                     </h2>
 
                     {error && (
+<<<<<<< HEAD
                         <div className="mb-4 p-3 bg-red-500/10 border border-red-500/20 rounded-xl">
                             <p className="text-sm text-red-400 text-center">{error}</p>
                         </div>
                     )}
 
                     <form onSubmit={handleSubmit} className="space-y-5">
+=======
+                        <div className="mb-4 p-3 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg">
+                            <p className="text-sm text-red-600 dark:text-red-400">{error}</p>
+                        </div>
+                    )}
+
+                    <form onSubmit={handleSubmit} className="space-y-4">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                         <Input
                             label="Email Address"
                             type="email"
@@ -94,7 +123,11 @@ export default function Login() {
                             <button
                                 type="button"
                                 onClick={() => setShowPassword(!showPassword)}
+<<<<<<< HEAD
                                 className="absolute right-3 top-9 text-gray-400 hover:text-white transition-colors"
+=======
+                                className="absolute right-3 top-9 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                             >
                                 {showPassword ? (
                                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -112,7 +145,11 @@ export default function Login() {
                         <Button
                             type="submit"
                             variant="primary"
+<<<<<<< HEAD
                             className="w-full py-3 text-lg shadow-aurora-cyan/20"
+=======
+                            className="w-full"
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                             disabled={loading}
                         >
                             {loading ? (
@@ -129,10 +166,17 @@ export default function Login() {
                         </Button>
                     </form>
 
+<<<<<<< HEAD
                     <div className="mt-8 text-center">
                         <p className="text-sm text-gray-400">
                             Don't have an account?{' '}
                             <Link to="/register" className="text-aurora-cyan hover:text-aurora-blue font-medium transition-colors">
+=======
+                    <div className="mt-6 text-center">
+                        <p className="text-sm text-gray-600 dark:text-gray-400">
+                            Don't have an account?{' '}
+                            <Link to="/register" className="text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                                 Sign up
                             </Link>
                         </p>
@@ -140,9 +184,15 @@ export default function Login() {
                 </div>
 
                 {/* Demo Credentials */}
+<<<<<<< HEAD
                 <div className="mt-6 p-4 bg-white/5 border border-white/10 rounded-xl backdrop-blur-sm">
                     <p className="text-sm text-gray-300 text-center">
                         <strong className="text-aurora-cyan">Demo:</strong> Create a new account to get started
+=======
+                <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
+                    <p className="text-sm text-blue-800 dark:text-blue-300 text-center">
+                        <strong>Demo:</strong> Create a new account to get started
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                     </p>
                 </div>
             </div>

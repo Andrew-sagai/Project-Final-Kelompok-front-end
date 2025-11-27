@@ -41,7 +41,11 @@
         {
           "id": "task-3",
           "title": "submit assignments",
+<<<<<<< HEAD
           "status": "Not Started",
+=======
+          "status": "In Progress",
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
           "startDate": "2025-04-01",
           "dueDate": "2025-06-25"
         }
@@ -55,7 +59,11 @@
       "userId": 1,
       "startDate": "2025-07-01",
       "dueDate": "2026-06-30",
+<<<<<<< HEAD
       "progress": 50,
+=======
+      "progress": 100,
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
       "tasks": [
         {
           "id": "task-1764185698633-oy1lu9ag2",
@@ -63,6 +71,7 @@
           "status": "Completed",
           "startDate": "2025-07-01",
           "dueDate": "2025-07-31"
+<<<<<<< HEAD
         },
         {
           "id": "task-1764216480129-1x5x5xqw2",
@@ -70,6 +79,8 @@
           "startDate": "2025-11-27",
           "dueDate": "2026-02-12",
           "status": "Not Started"
+=======
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
         }
       ],
       "createdAt": "2025-11-26T19:34:35.361Z",
@@ -81,11 +92,26 @@
       "userId": 2,
       "startDate": "2025-01-01",
       "dueDate": "2025-12-31",
+<<<<<<< HEAD
       "progress": 33,
       "tasks": [
         {
           "id": "task-1764186768466-ziazrislh",
           "title": "mulai nge gymdjfkdsajf",
+=======
+      "progress": 67,
+      "tasks": [
+        {
+          "id": "task-1764186733117-k3zad2wib",
+          "title": "berat badan 60kg",
+          "status": "Completed",
+          "startDate": "2025-01-01",
+          "dueDate": "2025-03-31"
+        },
+        {
+          "id": "task-1764186768466-ziazrislh",
+          "title": "mulai nge gym",
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
           "status": "Completed",
           "startDate": "2025-01-01",
           "dueDate": "2025-12-31"
@@ -96,6 +122,7 @@
           "status": "Not Started",
           "startDate": "2025-02-01",
           "dueDate": "2025-12-31"
+<<<<<<< HEAD
         },
         {
           "id": "task-1764192126659-8lwakdipz",
@@ -103,6 +130,8 @@
           "startDate": "2025-11-26",
           "dueDate": "2025-12-30",
           "status": "Not Started"
+=======
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
         }
       ],
       "createdAt": "2025-11-26T19:51:49.525Z",
@@ -133,12 +162,26 @@
       "habitPlanName": "Daily Routine",
       "habits": [
         {
+<<<<<<< HEAD
           "habitTitle": "daily",
           "time": "06:00",
           "isDoneToday": false
         }
       ],
       "lastUpdated": "2025-11-26T21:23:24.510Z",
+=======
+          "habitTitle": "bangun tidur",
+          "time": "06:00",
+          "isDoneToday": false
+        },
+        {
+          "habitTitle": "tidur",
+          "time": "22:00",
+          "isDoneToday": false
+        }
+      ],
+      "lastUpdated": "2025-11-26T19:53:48.654Z",
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
       "id": 2
     }
   ],
@@ -162,6 +205,7 @@
       "type": "Activity",
       "userId": 1,
       "id": 2
+<<<<<<< HEAD
     },
     {
       "title": "sdfds",
@@ -171,6 +215,8 @@
       "userId": 2,
       "createdAt": "2025-11-26T21:23:40.098Z",
       "id": 3
+=======
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
     }
   ]
 }

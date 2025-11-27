@@ -12,6 +12,7 @@ export default function Navbar() {
     };
 
     return (
+<<<<<<< HEAD
         <nav className="sticky top-4 z-50 mx-4 sm:mx-6 lg:mx-8 mb-8">
             <div className="glass-panel px-4 sm:px-6 lg:px-8 rounded-2xl">
                 <div className="flex items-center justify-between h-16">
@@ -26,13 +27,30 @@ export default function Navbar() {
                             </div>
                         </div>
                         <span className="text-xl font-bold text-white tracking-tight group-hover:text-aurora-cyan transition-colors duration-300">
+=======
+        <nav className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border-b border-gray-200 dark:border-gray-700 sticky top-0 z-40 shadow-sm">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex items-center justify-between h-16">
+                    {/* Logo */}
+                    <Link to="/" className="flex items-center gap-2 group">
+                        <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
+                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </div>
+                        <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                             Life Planner
                         </span>
                     </Link>
 
                     {/* Navigation Links - Only show when authenticated */}
                     {isAuthenticated && (
+<<<<<<< HEAD
                         <div className="hidden md:flex items-center gap-2">
+=======
+                        <div className="hidden md:flex items-center gap-1">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                             <NavLink to="/" icon={
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -61,6 +79,7 @@ export default function Navbar() {
 
                     {/* User Section */}
                     {isAuthenticated ? (
+<<<<<<< HEAD
                         <div className="flex items-center gap-4">
                             <div className="hidden md:flex items-center gap-3 px-4 py-2 bg-white/5 rounded-full border border-white/10">
                                 <div className="w-2 h-2 rounded-full bg-aurora-cyan animate-pulse"></div>
@@ -69,6 +88,18 @@ export default function Navbar() {
                                 </span>
                             </div>
                             <Button onClick={handleLogout} variant="outline" size="sm" className="hover:bg-red-500/20 hover:text-red-400 hover:border-red-500/50">
+=======
+                        <div className="flex items-center gap-3">
+                            <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-700 rounded-lg">
+                                <svg className="w-5 h-5 text-gray-600 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                </svg>
+                                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                                    {user?.name}
+                                </span>
+                            </div>
+                            <Button onClick={handleLogout} variant="outline" size="sm">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                                 </svg>
@@ -76,14 +107,24 @@ export default function Navbar() {
                             </Button>
                         </div>
                     ) : (
+<<<<<<< HEAD
                         <div className="flex items-center gap-3">
                             <Link to="/login">
                                 <Button variant="ghost" size="sm" className="text-white hover:text-aurora-cyan">
+=======
+                        <div className="flex items-center gap-2">
+                            <Link to="/login">
+                                <Button variant="outline" size="sm">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                                     Sign In
                                 </Button>
                             </Link>
                             <Link to="/register">
+<<<<<<< HEAD
                                 <Button variant="primary" size="sm" className="bg-gradient-to-r from-aurora-cyan to-aurora-blue hover:shadow-lg hover:shadow-aurora-cyan/20">
+=======
+                                <Button variant="primary" size="sm">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                                     Sign Up
                                 </Button>
                             </Link>
@@ -99,6 +140,7 @@ function NavLink({ to, children, icon }) {
     return (
         <Link
             to={to}
+<<<<<<< HEAD
             className="relative flex items-center gap-2 px-4 py-2 rounded-xl text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-300 group overflow-hidden"
         >
             <span className="relative z-10 flex items-center gap-2">
@@ -107,6 +149,12 @@ function NavLink({ to, children, icon }) {
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-aurora-cyan/10 to-aurora-purple/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-aurora-cyan to-aurora-purple transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+=======
+            className="flex items-center gap-2 px-3 py-2 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors font-medium"
+        >
+            {icon}
+            <span>{children}</span>
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
         </Link>
     );
 }

@@ -12,7 +12,11 @@ import Events from './pages/Events';
 function App() {
   return (
     <Router>
+<<<<<<< HEAD
       <div className="min-h-screen">
+=======
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
         <Navbar />
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <Routes>

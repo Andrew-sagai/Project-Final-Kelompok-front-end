@@ -2,6 +2,7 @@
 
 @layer base {
     body {
+<<<<<<< HEAD
         background: #000000;
         color: #ffffff;
         -webkit-font-smoothing: antialiased;
@@ -110,11 +111,15 @@
     a,
     label {
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+=======
+        @apply bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white antialiased;
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
     }
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
+<<<<<<< HEAD
     width: 10px;
     height: 10px;
 }
@@ -361,11 +366,43 @@
     }
 
     100% {
+=======
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400 dark:bg-gray-500;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+    @apply bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg border border-white/20 dark:border-gray-700/50;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
         opacity: 1;
         transform: translateY(0);
     }
 }
 
+<<<<<<< HEAD
 .hover-glow:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
 }
@@ -385,4 +422,8 @@
 
 .animate-float {
     animation: float 3s ease-in-out infinite;
+=======
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
 }

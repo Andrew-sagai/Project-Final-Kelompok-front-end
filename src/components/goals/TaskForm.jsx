@@ -49,7 +49,11 @@ export default function TaskForm({ goalId, goalDates, onSubmit, onCancel }) {
     };
 
     return (
+<<<<<<< HEAD
         <form onSubmit={handleSubmit} className="p-4 bg-blue-500/10 rounded-lg border border-blue-500/20 space-y-3">
+=======
+        <form onSubmit={handleSubmit} className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 space-y-3">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
             <Input
                 type="text"
                 name="title"

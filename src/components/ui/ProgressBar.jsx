@@ -17,7 +17,11 @@ export default function ProgressBar({ progress, color = 'blue', showLabel = true
 
     return (
         <div className="w-full">
+<<<<<<< HEAD
             <div className={`w-full bg-white/10 rounded-full overflow-hidden ${heights[height]}`}>
+=======
+            <div className={`w-full bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden ${heights[height]}`}>
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                 <div
                     className={`${colors[color]} ${heights[height]} rounded-full transition-all duration-500 ease-out flex items-center justify-end pr-2`}
                     style={{ width: `${clampedProgress}%` }}
@@ -30,7 +34,11 @@ export default function ProgressBar({ progress, color = 'blue', showLabel = true
                 </div>
             </div>
             {showLabel && clampedProgress <= 10 && (
+<<<<<<< HEAD
                 <p className="text-xs text-gray-400 mt-1">
+=======
+                <p className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                     {Math.round(clampedProgress)}%
                 </p>
             )}

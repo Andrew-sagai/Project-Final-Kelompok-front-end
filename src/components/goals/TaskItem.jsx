@@ -35,17 +35,29 @@ export default function TaskItem({ task, goalId, onToggle, onDelete, onUpdate })
 
     return (
         <div className={`flex items-center gap-3 p-3 rounded-lg border transition-all ${isOverdue
+<<<<<<< HEAD
             ? 'bg-red-500/10 border-red-500/20'
             : 'bg-white/5 border-white/10 hover:border-aurora-cyan/50'
+=======
+                ? 'bg-red-50 border-red-200 dark:bg-red-900/20 dark:border-red-800'
+                : 'bg-white border-gray-200 dark:bg-gray-800 dark:border-gray-700 hover:border-blue-300 dark:hover:border-blue-700'
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
             }`}>
             {/* Status Toggle */}
             <button
                 onClick={handleStatusChange}
                 className={`w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${task.status === 'Completed'
+<<<<<<< HEAD
                     ? 'bg-green-500 border-green-500'
                     : task.status === 'In Progress'
                         ? 'border-yellow-500 bg-yellow-500/20'
                         : 'border-white/20 hover:border-aurora-cyan'
+=======
+                        ? 'bg-green-500 border-green-500'
+                        : task.status === 'In Progress'
+                            ? 'border-yellow-500 bg-yellow-50'
+                            : 'border-gray-300 hover:border-blue-500'
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                     }`}
                 title={`Status: ${task.status} (Click to change)`}
             >
@@ -76,12 +88,20 @@ export default function TaskItem({ task, goalId, onToggle, onDelete, onUpdate })
                 ) : (
                     <div className="flex items-center justify-between">
                         <div>
+<<<<<<< HEAD
                             <p className={`text-sm font-medium truncate ${task.status === 'Completed' ? 'text-gray-500 line-through' : 'text-white'
+=======
+                            <p className={`text-sm font-medium truncate ${task.status === 'Completed' ? 'text-gray-500 line-through' : 'text-gray-900 dark:text-white'
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                                 }`}>
                                 {task.title}
                             </p>
                             <div className="flex items-center gap-2 mt-1">
+<<<<<<< HEAD
                                 <span className="text-xs text-gray-400">
+=======
+                                <span className="text-xs text-gray-500 dark:text-gray-400">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                                     {new Date(task.startDate).toLocaleDateString()} - {new Date(task.dueDate).toLocaleDateString()}
                                 </span>
                                 {isOverdue && (

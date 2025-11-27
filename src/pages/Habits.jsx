@@ -87,6 +87,7 @@ export default function Habits() {
     }
 
     return (
+<<<<<<< HEAD
         <div className="space-y-8 animate-fade-in">
             <div className="flex items-center justify-between">
                 <div>
@@ -94,6 +95,15 @@ export default function Habits() {
                         Daily Habits
                     </h1>
                     <p className="text-gray-400 text-lg">
+=======
+        <div className="space-y-6">
+            <div className="flex items-center justify-between">
+                <div>
+                    <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                        Daily Habits
+                    </h1>
+                    <p className="text-gray-600 dark:text-gray-400">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                         Build consistency with your daily routine
                     </p>
                 </div>
@@ -108,6 +118,7 @@ export default function Habits() {
                     onDelete={handleDelete}
                 />
             ) : (
+<<<<<<< HEAD
                 <div className="text-center py-16 glass-panel border-dashed border-2 border-white/10">
                     <div className="w-20 h-20 mx-auto bg-white/5 rounded-full flex items-center justify-center mb-6 animate-float">
                         <svg className="w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,6 +132,19 @@ export default function Habits() {
                         Create your daily habit plan to track your routine and build consistency
                     </p>
                     <Button onClick={() => setIsModalOpen(true)} variant="primary" size="lg" className="shadow-aurora-cyan/20">
+=======
+                <div className="text-center py-12 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-2xl shadow-xl border border-white/20 dark:border-gray-700/50 p-8">
+                    <svg className="w-16 h-16 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                        No Habit Plan Yet
+                    </h2>
+                    <p className="text-gray-600 dark:text-gray-400 mb-6">
+                        Create your daily habit plan to track your routine and build consistency
+                    </p>
+                    <Button onClick={() => setIsModalOpen(true)} variant="primary" size="lg">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                         <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                         </svg>

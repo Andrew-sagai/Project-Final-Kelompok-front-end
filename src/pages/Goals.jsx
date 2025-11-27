@@ -116,6 +116,7 @@ export default function Goals() {
     }
 
     return (
+<<<<<<< HEAD
         <div className="space-y-8 animate-fade-in">
             <div className="flex items-center justify-between">
                 <div>
@@ -127,6 +128,19 @@ export default function Goals() {
                     </p>
                 </div>
                 <Button onClick={() => setIsModalOpen(true)} size="lg" className="shadow-aurora-cyan/20">
+=======
+        <div className="space-y-6">
+            <div className="flex items-center justify-between">
+                <div>
+                    <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                        My Goals
+                    </h1>
+                    <p className="text-gray-600 dark:text-gray-400">
+                        Track your goals and tasks in one place
+                    </p>
+                </div>
+                <Button onClick={() => setIsModalOpen(true)} size="lg">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                     <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                     </svg>
@@ -134,7 +148,11 @@ export default function Goals() {
                 </Button>
             </div>
 
+<<<<<<< HEAD
             <div className="space-y-6">
+=======
+            <div className="space-y-4">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                 {goals.length > 0 ? (
                     goals.map(goal => (
                         <GoalCard
@@ -149,6 +167,7 @@ export default function Goals() {
                         />
                     ))
                 ) : (
+<<<<<<< HEAD
                     <div className="text-center py-16 glass-panel border-dashed border-2 border-white/10">
                         <div className="w-20 h-20 mx-auto bg-white/5 rounded-full flex items-center justify-center mb-6 animate-float">
                             <svg className="w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -160,6 +179,16 @@ export default function Goals() {
                             Create your first goal to get started on your journey to success!
                         </p>
                         <Button onClick={() => setIsModalOpen(true)} variant="primary" size="lg">
+=======
+                    <div className="text-center py-12">
+                        <svg className="w-16 h-16 mx-auto text-gray-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        <p className="text-gray-500 dark:text-gray-400 text-lg mb-4">
+                            No goals yet. Create your first goal to get started!
+                        </p>
+                        <Button onClick={() => setIsModalOpen(true)} variant="primary">
+>>>>>>> 35c55d34414a3fbd0930d11bc1970e2a572937be
                             Create Your First Goal
                         </Button>
                     </div>
