@@ -1,0 +1,176 @@
+{
+  "users": [
+    {
+      "name": "andrew",
+      "email": "andrew@gmail.com",
+      "password": "YW5kcmV3Nzc4bGlmZS1wbGFubmVyLXNhbHQtMjAyNQ==",
+      "createdAt": "2025-11-26T19:01:16.555Z",
+      "id": 1
+    },
+    {
+      "name": "user",
+      "email": "user@example.com",
+      "password": "cGFzc3dvcmQxMjNsaWZlLXBsYW5uZXItc2FsdC0yMDI1",
+      "createdAt": "2025-11-26T19:48:38.756Z",
+      "id": 2
+    }
+  ],
+  "goals": [
+    {
+      "userId": 1,
+      "title": "finish semester 5",
+      "description": "semester completion",
+      "startDate": "2025-01-01",
+      "dueDate": "2025-06-30",
+      "progress": 67,
+      "tasks": [
+        {
+          "id": "task-1",
+          "title": "final project",
+          "status": "Completed",
+          "startDate": "2025-05-01",
+          "dueDate": "2025-06-15"
+        },
+        {
+          "id": "task-2",
+          "title": "exam preparation",
+          "status": "Completed",
+          "startDate": "2025-06-01",
+          "dueDate": "2025-06-20"
+        },
+        {
+          "id": "task-3",
+          "title": "submit assignments",
+          "status": "Not Started",
+          "startDate": "2025-04-01",
+          "dueDate": "2025-06-25"
+        }
+      ],
+      "createdAt": "2025-11-26T19:04:38.732Z",
+      "id": 1
+    },
+    {
+      "title": "finish smester 6 7",
+      "description": "",
+      "userId": 1,
+      "startDate": "2025-07-01",
+      "dueDate": "2026-06-30",
+      "progress": 50,
+      "tasks": [
+        {
+          "id": "task-1764185698633-oy1lu9ag2",
+          "title": "bangun pagi",
+          "status": "Completed",
+          "startDate": "2025-07-01",
+          "dueDate": "2025-07-31"
+        },
+        {
+          "id": "task-1764216480129-1x5x5xqw2",
+          "title": "lelah",
+          "startDate": "2025-11-27",
+          "dueDate": "2026-02-12",
+          "status": "Not Started"
+        }
+      ],
+      "createdAt": "2025-11-26T19:34:35.361Z",
+      "id": 2
+    },
+    {
+      "title": "sehat",
+      "description": "",
+      "userId": 2,
+      "startDate": "2025-01-01",
+      "dueDate": "2025-12-31",
+      "progress": 33,
+      "tasks": [
+        {
+          "id": "task-1764186768466-ziazrislh",
+          "title": "mulai nge gymdjfkdsajf",
+          "status": "Completed",
+          "startDate": "2025-01-01",
+          "dueDate": "2025-12-31"
+        },
+        {
+          "id": "task-1764186779026-o85l117nl",
+          "title": "gabung komunitas gowes",
+          "status": "Not Started",
+          "startDate": "2025-02-01",
+          "dueDate": "2025-12-31"
+        },
+        {
+          "id": "task-1764192126659-8lwakdipz",
+          "title": "djflajfla",
+          "startDate": "2025-11-26",
+          "dueDate": "2025-12-30",
+          "status": "Not Started"
+        }
+      ],
+      "createdAt": "2025-11-26T19:51:49.525Z",
+      "id": 4
+    }
+  ],
+  "habits": [
+    {
+      "userId": 1,
+      "habitPlanName": "Daily Routine",
+      "habits": [
+        {
+          "habitTitle": "well sleep",
+          "time": "10:00 PM",
+          "isDoneToday": false
+        },
+        {
+          "habitTitle": "workout",
+          "time": "06:00 AM",
+          "isDoneToday": false
+        }
+      ],
+      "lastUpdated": "2025-11-26T19:05:28.942Z",
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "habitPlanName": "Daily Routine",
+      "habits": [
+        {
+          "habitTitle": "daily",
+          "time": "06:00",
+          "isDoneToday": false
+        }
+      ],
+      "lastUpdated": "2025-11-26T21:23:24.510Z",
+      "id": 2
+    }
+  ],
+  "events": [
+    {
+      "title": "meeting",
+      "description": "",
+      "date": "2025-11-29",
+      "time": "05:15",
+      "type": "Meeting",
+      "relatedGoalId": "",
+      "relatedTaskId": "",
+      "userId": 2,
+      "createdAt": "2025-11-26T20:12:22.530Z",
+      "id": 1
+    },
+    {
+      "title": "haha",
+      "date": "2025-11-30",
+      "time": "05:00",
+      "type": "Activity",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "sdfds",
+      "date": "2025-11-26",
+      "time": "12:01",
+      "type": "Activity",
+      "userId": 2,
+      "createdAt": "2025-11-26T21:23:40.098Z",
+      "id": 3
+    }
+  ]
+}
